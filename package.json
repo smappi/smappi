@@ -1,0 +1,26 @@
+{
+  "name": "smappi",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Smappi SDK",
+  "author": "Mikhail Andreev <adw0rd@smappi.org>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smappi/smappi-sdk.git"
+  },
+  "keywords": [
+    "smappi",
+    "api",
+    "sdk"
+  ],
+  "bugs": {
+    "url": "https://github.com/smappi/smappi-sdk/issues"
+  },
+  "homepage": "https://github.com/smappi/smappi-sdk#readme"
+}
