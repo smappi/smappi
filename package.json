@@ -12,7 +12,13 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "yargs": "^9.0.1"
+      "yargs": "^9.0.1",
+      "jquery": "^3.2.1",
+      "jsdom": "^11.2.0",
+      "xml2js": "^0.4.19",
+      "xmlhttprequest": "^1.8.0",
+      "jsdoctap": "^0.4.6",
+      "tap-parser": "^6.0.1"
   },
   "deprecated": false,
   "engines": {
