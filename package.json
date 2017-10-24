@@ -1,26 +1,37 @@
 {
   "name": "smappi",
-  "version": "1.0.1",
-  "private": false,
-  "description": "Smappi SDK",
-  "author": "Mikhail Andreev <adw0rd@smappi.org>",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "description": "Smappi SDK (details on https://smappi.org/)",
+  "author": {
+    "name": "Mikhail Andreev"
   },
-  "dependencies": {},
+  "bin": {
+    "smappi": "./bin/smappi.js"
+  },
+  "bugs": {
+    "url": "https://github.com/smappi/smappi/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "yargs": "^9.0.1"
+  },
+  "deprecated": false,
+  "engines": {
+    "node": ">=8"
+  },
+  "homepage": "https://github.com/smappi/smappi#readme",
+  "keywords": [
+    "API",
+    "Smappi SDK",
+    "parser",
+    "docker"
+  ],
   "license": "MIT",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smappi/smappi-sdk.git"
+    "url": "git+ssh://git@github.com/smappi/smappi.git"
   },
-  "keywords": [
-    "smappi",
-    "api",
-    "sdk"
-  ],
-  "bugs": {
-    "url": "https://github.com/smappi/smappi-sdk/issues"
+  "scripts": {
   },
-  "homepage": "https://github.com/smappi/smappi-sdk#readme"
+  "version": "0.1.1"
 }
