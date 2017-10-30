@@ -18,7 +18,8 @@
       "xml2js": "^0.4.19",
       "xmlhttprequest": "^1.8.0",
       "jsdoctap": "^0.4.6",
-      "tap-parser": "^6.0.1"
+      "tap-parser": "^6.0.1",
+      "sqlite3": "^3.1.13"
   },
   "deprecated": false,
   "engines": {
