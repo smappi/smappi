@@ -28,8 +28,7 @@
   "keywords": [
     "API",
     "Smappi SDK",
-    "parser",
-    "docker"
+    "parser"
   ],
   "license": "MIT",
   "main": "lib/index.js",
@@ -39,5 +38,5 @@
   },
   "scripts": {
   },
-  "version": "0.2.5"
+  "version": "0.2.6"
 }
