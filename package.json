@@ -1,42 +1,43 @@
 {
-  "name": "smappi",
-  "description": "Smappi SDK (details on https://smappi.org/)",
-  "author": {
-    "name": "Mikhail Andreev"
-  },
-  "bin": {
-    "smappi": "./bin/smappi.js"
-  },
-  "bugs": {
-    "url": "https://github.com/smappi/smappi/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "jquery": "^3.2.1",
-    "jsdoctap": "^0.4.6",
-    "jsdom": "^11.2.0",
-    "tap-parser": "^6.0.1",
-    "xml2js": "^0.4.19",
-    "xmlhttprequest": "^1.8.0",
-    "yargs": "^9.0.1"
-  },
-  "deprecated": false,
-  "engines": {
-    "node": ">=8"
-  },
-  "homepage": "https://github.com/smappi/smappi#readme",
-  "keywords": [
-    "API",
-    "Smappi SDK",
-    "parser"
-  ],
-  "license": "MIT",
-  "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/smappi/smappi.git"
-  },
-  "scripts": {},
-  "version": "0.3.4"
+    "name": "smappi",
+    "description": "Smappi SDK (details on https://smappi.org/)",
+    "author": {
+        "name": "Mikhail Andreev"
+    },
+    "bin": {
+        "smappi": "./bin/smappi.js"
+    },
+    "bugs": {
+        "url": "https://github.com/smappi/smappi/issues"
+    },
+    "bundleDependencies": false,
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "jquery": "^3.2.1",
+        "jsdoctap": "^0.4.6",
+        "jsdom": "^11.2.0",
+        "tap-parser": "^6.0.1",
+        "xml2js": "^0.4.19",
+        "xmlhttprequest": "^1.8.0",
+        "yargs": "^9.0.1",
+        "log4js": "^2.5.3"
+    },
+    "deprecated": false,
+    "engines": {
+        "node": ">=8"
+    },
+    "homepage": "https://github.com/smappi/smappi#readme",
+    "keywords": [
+        "API",
+        "Smappi SDK",
+        "parser"
+    ],
+    "license": "MIT",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/smappi/smappi.git"
+    },
+    "scripts": {},
+    "version": "0.3.4"
 }
