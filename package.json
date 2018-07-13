@@ -12,12 +12,13 @@
     },
     "bundleDependencies": false,
     "dependencies": {
-        "smappi-cl": "^0.5.4",
         "body-parser": "^1.18.2",
         "jsdoctap": "^0.5.5",
+        "smappi-cl": "^0.5.4",
         "tap-parser": "^6.0.1",
         "xml2js": "^0.4.19",
-        "yargs": "^9.0.1"
+        "yargs": "^9.0.1",
+        "zeelib": "^7.0.6"
     },
     "deprecated": false,
     "engines": {
@@ -34,6 +35,8 @@
         "type": "git",
         "url": "git+ssh://git@github.com/smappi/smappi.git"
     },
-    "scripts": {},
+    "scripts": {
+        "test": "node bin/smappi.js test --entrypoint tests"
+    },
     "version": "0.5.4"
 }

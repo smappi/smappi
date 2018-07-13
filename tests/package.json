@@ -1,0 +1,10 @@
+{
+    "name": "smappi-sdk-tests",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Smappi SDK and CL doctests",
+    "author": "adw0rd <x11org@gmail.com>",
+    "dependencies": {
+        "smappi-cl": "^0.5.4"
+    }
+}
