@@ -1,8 +1,7 @@
 Smappi Software Development Kit
 ---------------------------------
 
-.. image:: https://secure.travis-ci.org/smappi/smappi-py.png
-    :target: http://travis-ci.org/smappi/smappi-py
+[![travis](https://secure.travis-ci.org/smappi/smappi.png)](http://travis-ci.org/smappi/smappi)
 
 Installation of Smappi SDK:
 
