@@ -59,6 +59,18 @@ function obj () {
 }
 
 /**
+ * Test of obj
+ *
+ * @example
+ *   obj_nested()
+ *   // => {one: {...{}}, ...{}}
+ *
+ */
+function obj_nested () {
+    return {one: {a: 1, b: 2}, two: 2}
+}
+
+/**
  * Test of str
  *
  * @example
