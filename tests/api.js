@@ -1,13 +1,37 @@
 /**
+ * Test of simple list
+ *
+ * @example
+ *   list_simple()
+ *   // => ['str_1', 'str_2']
+ *
+ */
+function list_simple () {
+    return ['str_1', 'str_2'];
+}
+
+/**
+ * Test of list with regexp
+ *
+ * @example
+ *   list_regexp()
+ *   // => [/str_\d+/, 'str_2']
+ *
+ */
+function list_regexp () {
+    return ['str_123', 'str_2'];
+}
+
+/**
  * Test of list
  *
  * @example
- *   list()
- *   // => ['/moskva/kvartiry/1-k_kvartira_1', ..., '/moskva/kvartiry/1-k_kvartira_4']
+ *   list_mask()
+ *   // => ['str_1', ..., 'str_4']
  *
  */
-function list () {
-    return ['/moskva/kvartiry/1-k_kvartira_1', '/moskva/kvartiry/1-k_kvartira_2', '/moskva/kvartiry/1-k_kvartira_3', '/moskva/kvartiry/1-k_kvartira_4'];
+function list_mask () {
+    return ['str_1', 'str_2', 'str_3', 'str_4'];
 }
 
 /**
@@ -15,11 +39,11 @@ function list () {
  *
  * @example
  *   list_twice()
- *   // => ['/moskva/kvartiry/1-k_kvartira_1', ..., '/moskva/kvartiry/1-k_kvartira_4', ..., 123]
+ *   // => ['str_1', ..., 'str_4', ..., 123]
  *
  */
 function list_twice () {
-    return ['/moskva/kvartiry/1-k_kvartira_1', '/moskva/kvartiry/1-k_kvartira_2', '/moskva/kvartiry/1-k_kvartira_3', '/moskva/kvartiry/1-k_kvartira_4', 444, 55, 123];
+    return ['str_1', 'str_2', 'str_3', 'str_4', 444, 55, 123];
 }
 
 /**
