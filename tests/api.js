@@ -27,11 +27,13 @@ function list_regexp () {
  *
  * @example
  *   list_mask()
- *   // => ['str_1', ..., 'str_4']
+ *   // => ['str_1', ..., 'str_5']
+ *   list_mask()
+ *   // => ['str_1', ...[], 'str_4', 'str_5']
  *
  */
 function list_mask () {
-    return ['str_1', 'str_2', 'str_3', 'str_4'];
+    return ['str_1', 'str_2', 'str_3', 'str_4', 'str_5'];
 }
 
 /**
@@ -40,6 +42,10 @@ function list_mask () {
  * @example
  *   list_twice()
  *   // => ['str_1', ..., 'str_4', ..., 123]
+ *   list_twice()
+ *   // => ['str_1', ...[], 'str_4', ..., 123]
+ *   list_twice()
+ *   // => ['str_1', ...[], 'str_4', ..., ..., 55, 123]
  *
  */
 function list_twice () {
@@ -206,3 +212,33 @@ function lambda_test () {
     return {id: 1, name: 'test', deleteItProperty: 'deleteItProperty'}
 }
 
+/**
+ * Mask and simple obj
+ *
+ * @example
+ *   smpObj()
+ *   // => [..., {a: 1}]
+ */
+function smpObj () {
+    return [1, 2, {a: 1}]
+}
+
+/**
+ * Mask and complex obj
+ *
+ * @example
+ *   complexObj()
+ *   // => [1, 2, 3, ...[], {a: 1, b: 2, c: /\d+/, ...{}, z: 'Hello ...'}, 7, 8, ...]
+ */
+function complexObj () {
+    return [
+        1, 2, 3, 4, 5, 6, {
+            a: 1,
+            b: 2,
+            c: 3,
+            d: 4, e: 5,
+            z: 'Hello World'
+        },
+        7, 8, 9, 10
+    ]
+}
