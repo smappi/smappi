@@ -3,7 +3,7 @@ Smappi Software Development Kit
 
 [![travis](https://secure.travis-ci.org/smappi/smappi.png)](http://travis-ci.org/smappi/smappi)
 
-Installation of Smappi SDK:
+Installation of [Smappi](https://smappi.org/) SDK:
 
     npm install -g smappi
 
