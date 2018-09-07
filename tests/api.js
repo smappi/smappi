@@ -1,3 +1,5 @@
+const { request } = require('smappi-cl');
+
 /**
  * Test of simple list
  *
@@ -241,4 +243,26 @@ function complexObj () {
         },
         7, 8, 9, 10
     ]
+}
+
+/**
+ * Check GET request
+ *
+ * @example
+ *   getRequest('get')
+ *   // => "Hello, get!"
+ */
+function getRequest (name) {
+    return request.get('https://json.smappi.org/adw0rd/example/greeting', {name: name}).json()
+}
+
+/**
+ * Check POST request
+ *
+ * @example
+ *   postRequest('post')
+ *   // => "Hello, post!"
+ */
+function postRequest (name) {
+    return request.post('https://json.smappi.org/adw0rd/example/greeting', {name: name}).json()
 }
