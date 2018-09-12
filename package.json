@@ -38,5 +38,5 @@
     "scripts": {
         "test": "node bin/smappi.js test --entrypoint tests"
     },
-    "version": "0.7.1"
+    "version": "0.7.2"
 }
