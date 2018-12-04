@@ -266,3 +266,14 @@ function getRequest (name) {
 function postRequest (name) {
     return request.post('https://json.smappi.org/adw0rd/example/greeting', {name: name}).json()
 }
+
+/**
+ * Check correct User-Agent
+ *
+ * @example
+ *   checkUserAgent()
+ *   // => {'user_agent': '...Mozilla...AppleWebKit...Chrome...Safari...', ...{}}
+ */
+function checkUserAgent () {
+    return request.get('https://tools.adw0rd.com/browsinfo/?json').json()
+}

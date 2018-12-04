@@ -17,5 +17,5 @@ Run Server to Development:
 
 Run doctests:
 
-    # run in terminal
+    cd tests
     smappi test
