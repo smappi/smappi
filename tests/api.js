@@ -1,4 +1,4 @@
-const { request } = require('smappi-cl');
+const { request, proxy } = require('smappi-cl');
 
 /**
  * Test of simple list
@@ -276,4 +276,35 @@ function postRequest (name) {
  */
 function checkUserAgent () {
     return request.get('https://tools.adw0rd.com/browsinfo/?json').json()
+}
+
+/**
+ * Check withProxy method
+ *
+ * @example
+ *   withProxy(2)
+ *   // => 2
+ */
+function withProxy (numbers) {
+    var hosts = request.get(
+        'https://json.smappi.org/adw0rd/smappi-proxy-test/withProxy',
+        {numbers: numbers}
+    ).json();
+    return hosts.length;
+}
+
+/**
+ * Check next proxy (list of unique proxies)
+ *
+ * @example
+ *   nextProxy(2)
+ *   // => 2
+ */
+function nextProxy (numbers) {
+    var hosts = request.get(
+        'https://json.smappi.org/adw0rd/smappi-proxy-test/next',
+        {numbers: numbers}
+    ).json();
+    hosts = hosts.filter((v, i, self) => self.indexOf(v) === index);  // UNIQUE
+    return hosts.length;
 }
