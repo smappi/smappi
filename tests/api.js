@@ -305,6 +305,6 @@ function nextProxy (numbers) {
         'https://json.smappi.org/adw0rd/smappi-proxy-test/next',
         {numbers: numbers}
     ).json();
-    hosts = hosts.filter((v, i, self) => self.indexOf(v) === index);  // UNIQUE
+    hosts = hosts.filter((val, idx, self) => self.indexOf(val) === idx);  // UNIQUE
     return hosts.length;
 }
