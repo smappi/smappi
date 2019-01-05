@@ -5,6 +5,6 @@
     "description": "Smappi SDK and CL doctests",
     "author": "adw0rd <x11org@gmail.com>",
     "dependencies": {
-        "smappi-cl": "^0.7.5"
+        "smappi-cl": "^0.7.6"
     }
 }
