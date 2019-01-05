@@ -1,4 +1,4 @@
-const { request, proxy } = require('smappi-cl');
+const { request, proxy, captcha } = require('smappi-cl');
 
 /**
  * Test of simple list
@@ -321,3 +321,21 @@ function nextProxy (numbers) {
 // function followLocationDisabled () {
 //     //
 // }
+
+// function checkDnsLocation () {
+//     //
+// }
+
+/**
+ * Check Captcha Request (multipart/form-data with send binary file)
+ *
+ * @example
+ *   captchaSolve()
+ *   // => {state: true, solve: '33216'}
+ */
+function captchaSolve () {
+    let captchaContent = require('fs').readFileSync('captcha.png');
+    let captchaResult = captcha(captchaContent).resolve();
+    console.log('captchaResult', captchaResult)
+    return captchaResult;
+}
