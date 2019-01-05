@@ -308,3 +308,16 @@ function nextProxy (numbers) {
     hosts = hosts.filter((val, idx, self) => self.indexOf(val) === idx);  // UNIQUE
     return hosts.length;
 }
+
+
+// function skipProxy () {
+//     // next + skip
+// }
+
+// function followLocation () {
+//     // 301, 302 redirects
+// }
+
+// function followLocationDisabled () {
+//     //
+// }
