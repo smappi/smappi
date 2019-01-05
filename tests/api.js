@@ -334,7 +334,9 @@ function nextProxy (numbers) {
  *   // => {state: true, solve: '33216'}
  */
 function captchaSolve () {
-    let captchaContent = require('fs').readFileSync('captcha.png');
+    let captchaContent = require('fs').readFileSync(
+        require('path').join(__dirname, 'captcha.png')
+    );
     let captchaResult = captcha(captchaContent).resolve();
     console.log('captchaResult', captchaResult)
     return captchaResult;
