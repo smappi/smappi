@@ -4,3 +4,4 @@ node_modules
 package-lock.json
 .npmrc
 yarn.lock
+.DS_Store
