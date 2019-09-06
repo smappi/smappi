@@ -126,11 +126,9 @@ function list_strings ()
  */
 function defer_return_mixed ()
 {
-    let self = this;
     setTimeout(() => {
-        // console.log('self.return for defer_return_mixed', self.return)
-        self.return([{a: 1}, {a: 2, b: [41, 42, 43]}, {a: 3}]);
-    }, 1000);
+        this.return([{a: 1}, {a: 2, b: [41, 42, 43]}, {a: 3}]);
+    }, 2000);
 }
 
 /**
@@ -161,7 +159,6 @@ function defer_return (x)
 {
     var self = this;
     setTimeout(function () {
-        // console.log('self.return for defer_return!!!!!!!!!', self.return)
         return self.return(x + 111)
     }, 1000);
 }
